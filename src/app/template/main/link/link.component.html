@@ -1,0 +1,16 @@
+<section class="link_container">
+  <ng-container *ngFor="let item of links">
+    <div class="link">
+      <div>
+        <p><a href="{{ item.result.original_link }}">{{ item.result.original_link }}</a></p>
+      </div>
+      <div class="left_link_part">
+        <p><a href="{{ item.result.full_short_link }}" target="_blank">{{ item.result.full_short_link }}</a></p>
+        <!--<p> item.result.full_short_link2 </p>-->
+        <div class="button">
+          <button class="btn" (click)="click()">{{ texto }}</button>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</section>
